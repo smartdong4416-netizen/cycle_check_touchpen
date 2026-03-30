@@ -83,10 +83,10 @@ function drawPerfectCircle() {
 */
 
 const canvas = document.getElementById("c");
-const ctx = canvas.getContext("2d");
+const ctx = canvas.getContext("2d"); // getContext 取得畫布來操作
 
-let drawing = false;
-let points = [];
+let drawing = false; // 判斷是否在畫
+let points = []; // 記錄點數 以判斷圓度
 
 canvas.addEventListener("pointerdown", (e) => {
   if (e.pointerType !== "pen") return; // ⭐ 只允許筆
